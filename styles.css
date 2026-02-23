@@ -237,44 +237,68 @@ body {
     padding-bottom: 0.2rem;
 }
 
+/* ========== МОБИЛЬНАЯ ВЕРСИЯ ========== */
 @media (max-width: 700px) {
     body {
         padding: 1rem;
+        justify-content: flex-start;
+        padding-top: 2rem;
     }
-    
+
+    .container {
+        gap: 1.8rem;
+    }
+
     .hero {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1.5rem;
+        gap: 1.2rem;
+        width: 100%;
     }
-    
-    .display-name {
-        font-size: 3.5rem;
-    }
-    
+
     .avatar-wrapper {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
+        margin: 0;
     }
-    
+
+    .display-name {
+        font-size: 3.2rem;
+        line-height: 1.1;
+    }
+
+    .bio {
+        font-size: 1.2rem;
+    }
+
     .about-text {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         text-align: left;
     }
-    
+
+    .blog-posts {
+        gap: 1.4rem;
+    }
+
     .post-title {
         font-size: 1.4rem;
     }
-    
+
     .post-description {
         font-size: 1rem;
     }
-    
+
     .social-row {
         gap: 1.2rem 1.5rem;
+        justify-content: flex-start;
     }
-    
+
     .social-link {
         font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
     }
 }
